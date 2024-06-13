@@ -1,133 +1,68 @@
 package data;
 
 public class user {
+    public String user_name;
+    public String id_user;
+    public String password;
+    public String nama_lengkap;
+    public String jk;
+    public String alamat;
+    public String telp;
+    public String tgl_lahir;
+    public String status;
+    public int jumlahAnak;
+    public int masaKerja;
 
-    public static void inputuNama(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public user() {
+        // Implementasikan konstruktor
     }
 
-    public static void inputUser_name(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    private final String id_user;
-    private final String user_name;
-    private final String password;
-    private final String nama_lengkap;
-    private final String jk;
-    private final String alamat;
-    private final String no_telp;
-    private final String tgl_lahir;
-    private String arsip;
-
-    /**
-     *
-     * @param id_user
-     * @param user_name
-     * @param password
-     * @param nama_lengkap
-     * @param jk
-     * @param alamat
-     * @param no_telp
-     * @param tgl_lahir
-     */
-    public user(String id_user, String user_name, String password, String nama_lengkap, String jk, String alamat, String no_telp, String tgl_lahir) {
-        this.id_user = id_user;
+    public void inputUser_name(String user_name) {
         this.user_name = user_name;
+    }
+
+    public void inputId_user(String id_user) {
+        this.id_user = id_user;
+    }
+
+    public void inputPassword(String password) {
         this.password = password;
+    }
+
+    public void inputNama_lengkap(String nama_lengkap) {
         this.nama_lengkap = nama_lengkap;
+    }
+
+    public void inputjk(String jk) {
         this.jk = jk;
+    }
+
+    public void inputAlamat(String alamat) {
         this.alamat = alamat;
-        this.no_telp = no_telp;
+    }
+
+    public void inputTelp(String telp) {
+        this.telp = telp;
+    }
+
+    public void inputtgl_lahir(String tgl_lahir) {
         this.tgl_lahir = tgl_lahir;
     }
 
-    public user() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getStatus() {
+        return status;
     }
 
-    public String getid_user() {
-        return id_user;
+    public void inputJumlahAnak(int jumlahAnak) {
+        this.jumlahAnak = jumlahAnak;
     }
 
-    public String getuser_name() {
-        return user_name;
-    }
-    public String getpassword(){
-        return password;
-    }
-    public String getnama_lengkap(){
-        return nama_lengkap;
-    }
-    public String getjk(){
-        return jk;
-    }
-    public String getalamat(){
-        return alamat;
-    }
-    public String getno_telp(){
-        return no_telp;
-    }
-    public String gettgl_lahir(){
-        return tgl_lahir;
+    public void inputMasaKerja(int masaKerja) {
+        this.masaKerja = masaKerja;
     }
 
-    public void setuser(String user) {
-    }
-
-    /**
-     *
-     * @return
-     */
-    @Override
-    public String toString() {
-        String kd_arsip = null;
-        return "user{" +
-                "kd_arsip='" + kd_arsip + '\'' +
-                ", arsip='" + arsip + '\'' +
-                '}';
-    }
-
-    public void inputId_user(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void inputPassword(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void inputNama_lengkap(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void inputjk(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void inputAlamat(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void inputTelp(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void inputtgl_lahir(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public Object getStatus() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void inputJumlahAnak(int nextInt) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void inputMasaKerja(int nextInt) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String gajiTotal() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public double gajiTotal() {
+        // Implementasikan logika perhitungan gaji total
+        return 0.0;
     }
 }

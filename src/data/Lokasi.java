@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package data;
 
-/**
- *
- * @author User
- */
 public class Lokasi {
     private final String id_lokasi;
     private final String Latitude;
@@ -50,10 +42,7 @@ public class Lokasi {
         return Deskripsi;
     }
 
-    /**
-     *
-     * @param Lokasi
-     */
     public void setLokasi(String Lokasi) {
+        // Implementasi setter jika diperlukan
     }
 }
